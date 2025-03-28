@@ -16,6 +16,9 @@
   
   onMount(async () => {
     try {
+       // Vérifiez que les variables d'environnement sont bien chargées
+      console.log('PUBLIC_SUPABASE_URL disponible:', !!import.meta.env.PUBLIC_SUPABASE_URL);
+
       console.log('Chargement des produits en vedette...');
       
       // Récupérer les produits mis en avant (modification de is_featured à featured)
